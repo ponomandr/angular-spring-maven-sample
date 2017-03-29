@@ -24,6 +24,7 @@
             <groupId>com.example</groupId>
             <artifactId>frontend</artifactId>
             <version>${project.version}</version>
+            <scope>provided</scope>
         </dependency>
 
         <dependency>

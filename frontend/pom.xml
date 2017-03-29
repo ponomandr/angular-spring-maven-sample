@@ -17,7 +17,7 @@
         <resources>
             <resource>
                 <!-- Package the frontend into jar file under 'static' directory. It will be served by Spring Boot -->
-                <directory>dist</directory>
+                <directory>target/dist</directory>
                 <targetPath>static</targetPath>
             </resource>
         </resources>
