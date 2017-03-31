@@ -1,6 +1,6 @@
-import { Component } from "@angular/core";
-import { OnInit } from "@angular/core";
-import { Http } from "@angular/http";
+import { Component } from '@angular/core';
+import { OnInit } from '@angular/core';
+import { Http } from '@angular/http';
 
 @Component({
   selector: 'app-root',

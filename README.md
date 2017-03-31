@@ -1,4 +1,4 @@
-# angular2-spring-maven-sample
+# angular-spring-maven-sample
 This is an example of a multi-module Maven project with Spring Boot backend and Angular 2 frontend.
 The Angular app is configured to proxy API requests to http://localhost:8080/api/*. 
 So both backend and frontend need to be run simultaneously.
@@ -25,9 +25,3 @@ Otherwise the frontend will not be able to communicate to the backend.
     
 Open in browser [http://localhost:4200](http://localhost:4200).
    
-    
-
-
-
- 
-
