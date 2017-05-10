@@ -14,13 +14,8 @@
     <packaging>jar</packaging>
 
     <build>
-        <resources>
-            <resource>
-                <!-- Package the frontend into jar file under 'static' directory. It will be served by Spring Boot -->
-                <directory>target/dist</directory>
-                <targetPath>static</targetPath>
-            </resource>
-        </resources>
+      <!-- Angular build artifacts -->
+      <outputDirectory>${project.basedir}/dist</outputDirectory>
 
         <plugins>
             <plugin>
@@ -45,13 +40,13 @@
                         </goals>
                     </execution>
 
-                    <!-- Run 'npm run build' to build Angular application. The output dir is './dist' -->
+                    <!-- Run 'npm run build' to build Angular application. The output dir is configured in .angular-cli.json -->
                     <execution>
                         <id>npm run build</id>
                         <goals>
                             <goal>npm</goal>
                         </goals>
-                        <phase>package</phase>
+                        <phase>prepare-package</phase>
                         <configuration>
                             <arguments>run build</arguments>
                         </configuration>
